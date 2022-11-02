@@ -1,0 +1,348 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+:root {
+    --main-color: #2196f3;
+    --color-f: #999999;
+    --main-transition: all .5s;
+}
+
+
+/* start signup */
+.signup .container {
+    display: flex;
+    justify-content: center;
+}
+
+.signup .main-title {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    border: 2px solid var(--main-color);
+    padding: 15px 30px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition-delay: 0s;
+    transform: translateX(-50%);
+    -webkit-box-reflect: below 0px linear-gradient(transsignup, #0002);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.signup .main-title:hover {
+    color: #fff;
+    transition-delay: 0.5s;
+    box-shadow: 0px 0px 10px var(--main-color), 0px 0px 20px var(--main-color), 0px 0px 30px var(--main-color), 0px 0px 40px var(--main-color);
+}
+
+.signup .main-title span {
+    position: relative;
+    z-index: 2;
+}
+
+.signup .main-title::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    left: -20px;
+    top: 50%;
+    box-shadow: .5s;
+    transition-delay: 1s, .5s, 0s, 0s ;
+    box-shadow: 5px -8px 0px var(--main-color),                5px 8px 0px var(--main-color);
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.signup .main-title:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    transition-delay: 0s, .5s, 1s, 1s;
+    box-shadow: 5px 0px 0px var(--main-color),
+                5px 0px 0px var(--main-color);
+}
+
+.signup .main-title::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    right: -20px;
+    top: 50%;
+    box-shadow: .5s;
+    transition-delay: 1s, .5s, 0s, 0s ;
+    box-shadow: -5px -8px 0px var(--main-color), -5px 8px 0px var(--main-color);
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.signup .main-title:hover::after {
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    transition-delay: 0s, .5s, 1s, 1s;
+    box-shadow: -5px 0px 0px var(--main-color),
+                -5px 0px 0px var(--main-color);
+}
+
+.signup .form {
+    margin: 20px 0px;
+    width: 100%;
+    max-width: 370px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.signup .form .main-title {
+    margin-bottom: 20px;
+}
+
+.signup .form .cont {
+    margin: 40px 0;
+    color: var(--color-f);
+    caret-color: var(--main-color);
+    border-bottom: 2px solid var(--color-f);
+    padding: 15px 0;
+    position: relative;
+}
+
+.signup .form .cont i:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.signup .form .cont i.ey-sh,
+.signup .form .cont i.ey-sh-2 {
+    display: none;
+}
+
+.signup .form .cont i.ey-sh,
+.signup .form .cont i.ey-hi,
+.signup .form .cont i.ey-sh-2,
+.signup .form .cont i.ey-hi-2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transition: var(--main-transition);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.signup .form .cont i.ey-sh:hover,
+.signup .form .cont i.ey-hi:hover,
+.signup .form .cont i.ey-sh-2:hover,
+.signup .form .cont i.ey-hi-2:hover {
+    color: var(--main-color);
+}
+
+.signup .form .cont input {
+    border: none;
+    margin-left: 20px;
+    font-size: 20px;
+    width: 90%;
+}
+
+.signup .form .cont input:focus {
+    outline: none;
+}
+
+.signup .form .cont .progerss_name,
+.signup .form .cont .progerss_email,
+.signup .form .cont .progerss_pass_1,
+.signup .form .cont .progerss_pass_2 {
+    background-color: #3196f3;
+    height: 2px;
+    width: 0px;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.signup .form .cont .count_name,
+.signup .form .cont .count_email,
+.signup .form .cont .count_pass_1,
+.signup .form .cont .count_pass_2 {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+}
+
+.zero {
+    font-weight: bold;
+    color: red;
+}
+
+
+
+.signup .form input[type="submit"] {
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.signup .form input[type="submit"]:hover {
+    background-color: var(--color-f);
+}
+
+.signup .form .here {
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 1px dashed var(--color-f);
+    padding-bottom: 20px;
+}
+
+.signup .form .here p {
+    color: #999999;
+}
+
+.signup .form .here p a {
+    color: var(--main-color);
+    font-weight: bold;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.signup .form .here p a:hover {
+    color: var(--color-f);
+}
+
+.signup .form .icon {
+    text-align: center;
+}
+
+.signup .form .icon .i {
+    text-align: center;
+    align-items: center;
+    margin: 20px 0 5px;
+}
+
+.signup .form .icon h3 {
+    margin-bottom: 20px;
+    opacity: .8;
+}
+
+.signup .form .icon i {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    padding-top: 7px;
+    text-align: center;
+    transition: all .5s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.signup .form .icon .i a i.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.signup .form .icon .i a i.fa-twitter {
+    background-color: #1da1f2;
+}
+
+.signup .form .icon .i a i.fa-google {
+    background-color: #db4437;
+}
+
+.signup .form .icon .i a i:hover {
+    transition: all .5s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+/* end signup */
+
+
